@@ -2,13 +2,16 @@
   --spacing-one: calc(2rem * 0.5);
   --spacing-two: calc(2rem);
 }
-body,
-html {
+
+html body {
   font-family: "Open Sans", sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   color: #777;
+  background-color: #e5e5e5;
   font-weight: 400;
+  margin:0px;
+  padding:0px;
   width: 100% !important;
   height: 100% !important;
 }
@@ -86,8 +89,90 @@ hr {
   margin-top: var(--spacing-two);
   margin-bottom: var(--spacing-two);
 }
+/*HOME*/
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  margin: 30px;
+}
+#home img {
+  width: 300px;
+  height: 300px;
+}
+
+.btn-home {
+   
+  outline: none;
+  border: none;
+  background: rgb(34, 34, 221);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 15px;
+  width: 300px;
+  /* margin: 10px auto 0px 400px; */
+}
+
+.btn-home:hover, .btn-doc:hover, .btn:hover{
+  box-shadow: 0 2px var(--grey);
+  top: -2px;
+  background: #D36EEE;
+}
+
+/*Documentation*/
+.btn-doc {
+  outline: none;
+  border: none;
+  background: rgb(34, 34, 221);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 15px;
+  width: 300px;
+  height: 100px;
+
+}
+
+/* Footer Section*/
+#footer {
+  background: white;
+  padding: 30px 0;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+}
+#footer p {
+  color: #888;
+  font-size: 14px;
+}
+#footer a {
+  color: #608dfd;
+}
+#footer a:hover {
+  border-bottom: 2px solid #608dfd;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+/* OLD STYLING */
 .section-title {
   margin-bottom: 70px;
 }
@@ -151,59 +236,6 @@ a:focus,
   outline: none;
   outline-offset: none;
 }
-/* Header Section */
-.intro {
-  display: table;
-  width: 100%;
-  padding: 0;
-  /* background: url(../images/hero.jpg) center center no-repeat; */
-  background-color: #e5e5e5;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-.nav-cat{
-  margin-bottom: 20%;
-}
-.intro .overlay {
-  background: rgba(0, 0, 0, 0.2);
-}
-.intro h1 {
-  font-family: "Raleway", sans-serif;
-  color: #fff;
-  font-size: 82px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-.intro h1 span {
-  font-weight: 800;
-  color: #5ca9fb;
-}
-.intro p {
-  color: #fff;
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 30px;
-  margin: 0 auto;
-  margin-bottom: 60px;
-}
-header .intro-text {
-  padding-top: 350px;
-  padding-bottom: 200px;
-  text-align: center;
-}
-.photo {
-  height: 200px;
-  width: 200px;
-  box-shadow: 5px 5px;
-}
-.photo:hover {
-  opacity: 0.3;
-}
-
 /* features Section */
 #features {
   background: #f6f6f6;
@@ -347,27 +379,7 @@ label {
   color: #608dfd;
   background: #fff;
 }
-/* Footer Section*/
-#footer {
-  background: #f6f6f6;
-  padding: 30px 0;
-  padding: 20px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  height: 60px;
-  width: 100%;
-}
-#footer p {
-  color: #888;
-  font-size: 14px;
-}
-#footer a {
-  color: #608dfd;
-}
-#footer a:hover {
-  border-bottom: 2px solid #608dfd;
-}
+
 /* Login/Signup Section */
 #access {
   padding: 30px 0 10px;

@@ -2,23 +2,9 @@ import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Nav from "./component/Nav";
 import Home from "./pages/Home";
-import Impact from "./component/Impact";
-
-
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-
-// import Shop from "./component/ShopList";
-import Shop from "./pages/Shop"
-
-import Contact from "./pages/Contact";
+import Documentation from "./pages/Documentation";
+import Access from "./pages/Access";
 import Footer from "./component/Footer";
-import Detail from "./pages/Detail";
-import Cart from "./component/Cart";
-import Success from "./pages/Success";
-import NoMatch from "./pages/NoMatch";
-import OrderHistory from "./pages/OrderHistory";
-import ForgotPassword from "./component/ForgotPassword";
 
 import "./App.css";
 
@@ -58,22 +44,9 @@ function App() {
           <StoreProvider>
             <Nav />
             <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route exact path="/impact" element={<Impact />} />
-              <Route exact path="/shop" element={<Shop />} />
-              <Route exact path="/login" element={<Login />} />
-              <Route exact path="/signup" element={<Signup />} />
-              <Route exact path="/contact" element={<Contact />} />
-              <Route exact path="/products/:id" element={<Detail />} />
-              <Route exact path="/cart" element={<Cart />} />
-              <Route exact path="/success" element={<Success />} />
-              <Route exact path="/nomatch" element={<NoMatch />} />
-              <Route exact path="/orderHistory" element={<OrderHistory />} />
-              <Route
-                exact
-                path="/forgotpassword"
-                element={<ForgotPassword />}
-              />
+              <Route exact path="/" element={<Home />} /> 
+              <Route exact path="/documentation" element={<Documentation />} /> 
+              <Route exact path="/access" element={<Access />} /> 
             </Routes>
             <Footer />
           </StoreProvider>

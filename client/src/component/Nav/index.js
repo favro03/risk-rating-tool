@@ -53,20 +53,23 @@ function Nav(props) {
                   
                 </li>
                 <li >
-                  <a onClick={closeMobileMenu} href="/impact">Impact</a>
+                  <a onClick={closeMobileMenu} href="/risk-rating-tool">Risk Rating Tool</a>
                 </li>
 
                 <li>
-                  <Link onClick={closeMobileMenu} to="/likelyhood">Likelyhood</Link>
+                  <Link onClick={closeMobileMenu} to="/risk-landscape">Risk Landscape</Link>
                 </li>
                 <li>
-                  <Link onClick={closeMobileMenu} to="/inherent-risk">Inherent Risk</Link>
+                  <Link onClick={closeMobileMenu} to="/documentation">Documentation</Link>
                 </li>
                 <li>
-                  <Link onClick={closeMobileMenu} to="/mitigating-controls">Mitigating Controls</Link>
+                  <Link onClick={closeMobileMenu} to="/">Archer</Link>
                 </li>
                 <li>
-                  <Link onClick={closeMobileMenu} to="/residual-risk">Residual Risk</Link>
+                  <Link onClick={closeMobileMenu} to="/">PI</Link>
+                </li>
+                <li>
+                  <Link onClick={closeMobileMenu} to="/">Policy</Link>
                 </li>
                
               </ul>
